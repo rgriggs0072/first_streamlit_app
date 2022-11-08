@@ -46,7 +46,7 @@ streamlit.dataframe(my_data_row)
 
 
 # Section to display choice
-stramlit.header("What fruit would you like to add?")
+streamlit.header("What fruit would you like to add?")
 pick_one = streamlit.text_input('pick one')
 streamlit.write('thanks for picking ', choice)
 
