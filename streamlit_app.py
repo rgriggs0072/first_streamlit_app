@@ -79,7 +79,7 @@ if streamlit.button('Get Fruit Load List'):
 # Section to display choice
 streamlit.header("What fruit would you like to add?")
 pick_one = streamlit.text_input('pick one')
-streamlit.write('thanks for picking ', pick_one)
+streamlit.write('thanks for picking ', insert_row_snowflake(pick_one))
 
 # add data to the fruit_load_list table in snowflake
 #allow the end user to add a fruit to the list
