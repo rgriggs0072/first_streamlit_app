@@ -80,7 +80,6 @@ if streamlit.button('Get Fruit Load List'):
 streamlit.header("What fruit would you like to add?")
 pick_one = streamlit.text_input('pick one')
 streamlit.write('thanks for picking ', pick_one)
-get_from_function = insert_row_snowflake(pick_one)
 streamlit.dataframe(back_from_function)
 
 
