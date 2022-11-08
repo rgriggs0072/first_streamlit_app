@@ -50,3 +50,5 @@ streamlit.header("What fruit would you like to add?")
 pick_one = streamlit.text_input('pick one')
 streamlit.write('thanks for picking ', pick_one)
 
+# add data to the fruit_load_list table in snowflake
+my_cur.execute("insert into fruit_load_list values ('from streamlit')");
